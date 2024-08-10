@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2.5rem;
+    font-family: calibri;
+}
+
+.container {
+    padding: 1rem;
+    color: #fff;
+    font-size: 3rem; 
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 3fr 8fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+}
+
+header {
+    background-color: hsl(252, 6%, 12%);
+    grid-area: header;
+}
+
+main {
+    background-color: hsl(252, 35%, 16%);
+    grid-area: main;
+}
+
+aside {
+    background-color: hsl(252, 52%, 14%);
+grid-area: aside;
+}
+
+footer {
+    background-color: hsl(252, 74%, 12%);   
+    grid-area: footer;
+}

@@ -1,0 +1,54 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2.5rem;
+    font-family: calibri;
+}
+
+.container {
+    background-color: #333;
+    margin: 20px auto;
+    width: 90%;
+    min-height: 95vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 3fr 5fr 2fr;
+    grid-template-areas: 
+    "box1 box1 box1"
+    "box2 box2 box3"
+    "box4 box5 box5"
+    "box6 box6 box6";
+}
+
+.box {
+    background-color: #ccc;
+}
+
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.box3{
+    grid-area: box3;
+}
+.box4{
+    grid-area: box4;
+}
+.box5{
+    grid-area: box5;
+}
+.box6{
+    grid-area: box6;
+}
