@@ -17,12 +17,12 @@ body {
 .container {
     background-color: #333;
     margin: 20px auto;
-    width: 90%;
+    width: 90%; 
     min-height: 95vh;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 3fr 5fr 2fr;
+    grid-template-rows: 1fr 2fr 4fr 1fr;
     grid-template-areas: 
     "box1 box1 box1"
     "box2 box2 box3"

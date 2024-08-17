@@ -19,9 +19,9 @@ body {
     font-size: 3rem; 
     height: 100vh;
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 3fr 8fr 1fr;
+    grid-gap: 5px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2fr 7fr 1fr;
     grid-template-areas: 
     "header header"
     "main aside"
