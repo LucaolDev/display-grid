@@ -1,30 +1,50 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-.container{
-    gap: 5px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 20rem;
+.container {
+  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 20rem;
+
+  .bg1 {
+    background-image:linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)), url(../images/bg1.jpg);
+  }
+  .bg2 {
+    background-image:linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)), url(../images/bg2.jpg);
+  }
+  .bg3 {
+    background-image:linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)), url(../images/bg3.jpg);
+  }
+  .bg4 {
+    background-image:linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)), url(../images/bg4.jpg);
+  }
+
+  .box {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 
-    .bg1{
-        background-image: url('/images/bg1.jpg'); 
+    h2, p {
+       color: white;
+       font-size: 3em;
     }
-    .bg2{
-        background-image: url('/images/bg2.jpg');
-    }
-    .bg3{
-        background-image: url('/images/bg3.jpg');
-    }
-    .bg4{
-        background-image: url('/images/bg4.jpg');
-    }
+  }
+}
+
+.span-2 {
+  grid-row: span 2;
+  grid-column: span 2;
 }
