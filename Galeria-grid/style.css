@@ -1,0 +1,63 @@
+/* Programador Designer Pro
+Curti, Salva esse Post, Compartilha */
+
+/* Reset CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	background: linear-gradient(45deg, #190f2c, #200b30);
+	padding: 15px;
+	font-size: 62.5%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	display: inline-block;
+
+}
+
+img:hover {
+	transform: scale(0.98);
+
+}
+
+/* Main CSS */
+.grid-wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns:
+		repeat(auto-fit, minmax(25rem, 1fr));
+	grid-auto-rows: 20rem;
+	grid-auto-flow: dense;
+
+	div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 5px;
+		}
+	}
+}
+
+.wide {
+	grid-column: span 2;
+}
+.tall {
+	grid-row: span 2;
+}
+.big {
+	grid-column: span 2;
+	grid-row: span 2;
+}

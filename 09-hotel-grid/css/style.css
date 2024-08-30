@@ -1,56 +1,83 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
+html{
+    font-size: 62.5%;
+}
+
+body {
+    color: #fff;
+    font-family: "Catamaran", sans-serif;
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin: 1rem;
+}
+
+p {
+    font-size: 2rem;
 }
 
 .container {
-  gap: .5rem;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(auto, 1fr));
-  grid-auto-rows: 20rem;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 20rem;
+    grid-gap: .5rem;    
+    padding: 1rem;    
+}
 
-  .bg1 {
-    background-image:linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)), url(../images/bg1.jpg);
-  }
-  .bg2 {
-    background-image:linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)), url(../images/bg2.jpg);
-  }
-  .bg3 {
-    background-image:linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)), url(../images/bg3.jpg);
-  }
-  .bg4 {
-    background-image:linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)), url(../images/bg4.jpg);
-  }
-
-  .box {
-    background-repeat: no-repeat;
-    background-position: center;
+.box {
+    cursor: pointer;    
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    border-radius: 5px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity 1s ease-in, transform 1s;
+}
 
-    h2, p {
-       color: white;
-       font-size: 3rem;
-    }
-  }
+.box:hover {
+    opacity: 0.85;
+    transform: scale(0.98);
 }
 
 .span-2 {
-  grid-row: span 2;
-  grid-column: span 2;
+     grid-column: span 2;
+     grid-row: span 2;
+ }
+
+.bg1 {
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0.1)),
+    url(../images/bg1.jpg);
 }
 
-@media(width<=1024px){
-    .container{
-        grid-template-columns: repeat(2, minmax(auto, 1fr));
-    }
+.bg2 {
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0.1)),
+    url(../images/bg2.jpg);
+ }
 
+ .bg3 {
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0.1)),
+    url(../images/bg3.jpg);
+ }
+ .bg4 {
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0.1)),
+    url(../images/bg4.jpg);
+ }
+
+@media(width <= 1000px){
+    .container {
+         grid-template-columns: repeat(2, 1fr);   
+    }
 }
